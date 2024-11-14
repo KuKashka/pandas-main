@@ -2,7 +2,7 @@ import pandas as pd
 df = pd.read_csv('GoogleApps.csv')
 
 # Скільки коштує (Price) найдешевший платний додаток (Type == 'Paid)?
-paid_apps = df[df['Type']=='Pait']
+paid_apps = df[df['Type']=='Paid']
 print(paid_apps['Price'].min())
 
 # Чому дорівнює медіанна (median) кількість установок (Installs)
